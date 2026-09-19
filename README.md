@@ -9,3 +9,7 @@ Las publica GitHub Pages desde la carpeta `docs` de la rama `main`. Las páginas
 `noindex` para que no salgan en buscadores, pero cualquiera con el enlace las puede abrir.
 
 Cada página es un solo archivo HTML, sin dependencias aparte de las fuentes de Google.
+
+La carpeta `qr` tiene un código QR por página, en SVG y en PNG de 1200 px. Los módulos
+oscuros son corazones negros y rojos. Los tres patrones de las esquinas quedan cuadrados
+porque el lector los necesita para orientarse.
