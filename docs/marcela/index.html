@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  *{ box-sizing: border-box; }
+  :root{
+    color-scheme: light dark;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body{ margin: 0; }
+  img{ max-width: 100%; }
+</style>
+<title>Gracias, Marcela García</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Karla:wght@400;500;600&family=Caveat:wght@500&display=swap">
+<style>
+  :root{
+    --ground:#F7EFEC;
+    --ground-2:#FFFBF9;
+    --ink:#2B2026;
+    --ink-soft:#6E5C63;
+    --rule:#E2D0CA;
+    --garnet:#A32A4E;
+    --sage:#77896A;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#17121A;
+      --ground-2:#1F1822;
+      --ink:#F0E5E6;
+      --ink-soft:#B4A2A8;
+      --rule:#3C2F37;
+      --garnet:#E88AA1;
+      --sage:#9EB18B;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#17121A;
+    --ground-2:#1F1822;
+    --ink:#F0E5E6;
+    --ink-soft:#B4A2A8;
+    --rule:#3C2F37;
+    --garnet:#E88AA1;
+    --sage:#9EB18B;
+  }
+
+  body{
+    background:
+      radial-gradient(60% 40% at 50% 0%, var(--ground-2) 0%, transparent 70%),
+      var(--ground);
+    color: var(--ink);
+    font-family: "Karla", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    padding-inline: clamp(16px, 6vw, 40px);
+    padding-block: clamp(36px, 9vw, 84px);
+  }
+
+  .hoja{
+    max-width: 34rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(34px, 7vw, 54px);
+  }
+
+  .encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .ocasion{
+    font-size: .74rem;
+    font-weight: 600;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--garnet);
+  }
+
+  h1{
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.5rem, 12vw, 4.2rem);
+    line-height: 1.02;
+    letter-spacing: -.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 em{
+    display: block;
+    font-style: italic;
+    color: var(--garnet);
+  }
+
+  .entrada{
+    color: var(--ink-soft);
+    max-width: 30rem;
+    margin: 0;
+  }
+
+  .ramita{ width: 40px; height: auto; }
+  .ramita path, .ramita line{ fill: none; stroke: var(--sage); stroke-width: 1.4; stroke-linecap: round; }
+  .ramita circle{ fill: var(--garnet); }
+
+  .tallo{
+    stroke-dasharray: 120;
+    stroke-dashoffset: 0;
+    animation: dibujar 1.6s ease-out 1;
+  }
+  @keyframes dibujar{ from{ stroke-dashoffset: 120; } to{ stroke-dashoffset: 0; } }
+
+  .cartas{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(30px, 6vw, 44px);
+  }
+
+  .carta{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .de{
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .carta p{ margin: 0; }
+  .carta p + p{ margin-top: .9em; }
+
+  .carta p:first-of-type::first-letter{
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-size: 1.9em;
+    line-height: 1;
+    color: var(--garnet);
+    padding-right: .05em;
+  }
+
+  .firma{
+    font-family: "Caveat", "Segoe Script", cursive;
+    font-size: 1.85rem;
+    line-height: 1.2;
+    color: var(--garnet);
+    margin-top: .3em;
+  }
+
+  .adorno{ display: block; width: 160px; height: 24px; margin-inline: auto; }
+  .adorno line{ stroke: var(--rule); stroke-width: 1; }
+  .adorno ellipse{ fill: none; stroke: var(--garnet); stroke-width: 1.2; }
+  .adorno circle{ fill: var(--sage); }
+
+  .cierre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid var(--rule);
+    padding-top: clamp(26px, 6vw, 40px);
+  }
+
+  .cierre .grande{
+    font-family: "Bodoni Moda", Georgia, serif;
+    font-style: italic;
+    font-size: clamp(1.3rem, 5.5vw, 1.75rem);
+    line-height: 1.35;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .fecha{
+    font-size: .74rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .tallo{ animation: none; }
+  }
+</style>
+</head>
+<body>
+<main class="hoja">
+
+  <header class="encabezado">
+    <svg class="ramita" viewBox="0 0 40 92" aria-hidden="true">
+      <path class="tallo" d="M20 90 C 20 66 20 40 20 6"></path>
+      <path d="M20 68 C 8 64 5 52 18 54"></path>
+      <path d="M20 54 C 32 50 35 38 22 40"></path>
+      <path d="M20 40 C 8 36 5 24 18 26"></path>
+      <circle cx="20" cy="9" r="3.2"></circle>
+      <circle cx="26" cy="17" r="2.2"></circle>
+      <circle cx="14" cy="18" r="2.2"></circle>
+    </svg>
+
+    <p class="ocasion">Amor y amistad</p>
+
+    <h1>Gracias,<em>Marcela García</em></h1>
+
+    <p class="entrada">Hoy no te pedimos nada. Solo queremos decirte lo que casi nunca te decimos en voz alta.</p>
+  </header>
+
+  <div class="cartas">
+
+    <article class="carta">
+      <p class="de">De tu novio</p>
+      <p>Gracias por el amor de todos los días, el que no hace ruido y siempre está. Por tu risa en las mañanas difíciles y por convertir un plan sencillo en el mejor del mes.</p>
+      <p>Contigo la vida es más fácil y más bonita. Te admiro, te quiero y aquí estoy.</p>
+      <p class="firma">Tu novio</p>
+    </article>
+
+    <svg class="adorno" viewBox="0 0 160 24" aria-hidden="true">
+      <line x1="0" y1="12" x2="60" y2="12"></line>
+      <line x1="100" y1="12" x2="160" y2="12"></line>
+      <ellipse cx="80" cy="6" rx="4" ry="6"></ellipse>
+      <ellipse cx="80" cy="18" rx="4" ry="6"></ellipse>
+      <ellipse cx="74" cy="12" rx="6" ry="4"></ellipse>
+      <ellipse cx="86" cy="12" rx="6" ry="4"></ellipse>
+      <circle cx="80" cy="12" r="2"></circle>
+    </svg>
+
+    <article class="carta">
+      <p class="de">De tus hermanos</p>
+      <p>Gracias por ser la hermana que escucha, la que da la mano antes de que se la pidan y la que se acuerda de todo. Crecer contigo nos enseñó a cuidarnos.</p>
+      <p>Cuentas con nosotros siempre, para lo bueno y para lo otro.</p>
+      <p class="firma">Tus hermanos</p>
+    </article>
+
+    <svg class="adorno" viewBox="0 0 160 24" aria-hidden="true">
+      <line x1="0" y1="12" x2="60" y2="12"></line>
+      <line x1="100" y1="12" x2="160" y2="12"></line>
+      <ellipse cx="80" cy="6" rx="4" ry="6"></ellipse>
+      <ellipse cx="80" cy="18" rx="4" ry="6"></ellipse>
+      <ellipse cx="74" cy="12" rx="6" ry="4"></ellipse>
+      <ellipse cx="86" cy="12" rx="6" ry="4"></ellipse>
+      <circle cx="80" cy="12" r="2"></circle>
+    </svg>
+
+    <article class="carta">
+      <p class="de">De tu papá</p>
+      <p>Hija, gracias por la mujer que eres. Verte salir adelante a tu manera es el orgullo más grande que tengo.</p>
+      <p>Nada de lo que pase cambia lo que siento por ti.</p>
+      <p class="firma">Tu papá</p>
+    </article>
+
+  </div>
+
+  <footer class="cierre">
+    <p class="grande">Eres el amor y la amistad de esta casa. Gracias por todo, Marcela.</p>
+    <p class="fecha">19 de septiembre de 2026</p>
+  </footer>
+
+</main>
+</body>
+</html>

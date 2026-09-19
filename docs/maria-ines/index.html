@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<style>
+  *{ box-sizing: border-box; }
+  :root{
+    color-scheme: light dark;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  body{ margin: 0; }
+  img{ max-width: 100%; }
+</style>
+<title>Gracias, María Inés Montaño</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Figtree:wght@400;500;600&family=Dancing+Script:wght@600&display=swap">
+<style>
+  :root{
+    --ground:#F7EBE8;
+    --ground-2:#FFF8F6;
+    --ink:#2A1114;
+    --ink-soft:#7B4E4D;
+    --rule:#E3C8C2;
+    --carmin:#B3122B;
+    --vino:#7A1428;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#1A0B0E;
+      --ground-2:#251114;
+      --ink:#F7E7E4;
+      --ink-soft:#C79B97;
+      --rule:#43211F;
+      --carmin:#F1788A;
+      --vino:#E4A49D;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#1A0B0E;
+    --ground-2:#251114;
+    --ink:#F7E7E4;
+    --ink-soft:#C79B97;
+    --rule:#43211F;
+    --carmin:#F1788A;
+    --vino:#E4A49D;
+  }
+
+  body{
+    background:
+      linear-gradient(180deg, var(--ground-2) 0%, transparent 46%),
+      var(--ground);
+    color: var(--ink);
+    font-family: "Figtree", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.72;
+    padding-inline: clamp(16px, 6vw, 44px);
+    padding-block: clamp(36px, 9vw, 80px);
+  }
+
+  .pagina{
+    max-width: 44rem;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(34px, 6vw, 52px);
+  }
+
+  .encabezado{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .ocasion{
+    font-size: .74rem;
+    font-weight: 600;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--vino);
+    margin: 0;
+  }
+
+  h1{
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 300;
+    font-size: clamp(2.3rem, 10vw, 3.9rem);
+    line-height: 1.06;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 em{
+    display: block;
+    font-style: italic;
+    color: var(--carmin);
+  }
+
+  .entrada{
+    color: var(--ink-soft);
+    max-width: 32rem;
+    margin: 0;
+    padding-top: 6px;
+    border-top: 1px solid var(--rule);
+  }
+
+  .cartas{
+    display: flex;
+    flex-direction: column;
+    gap: clamp(26px, 5vw, 38px);
+  }
+
+  .carta{
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 8px 28px;
+    align-items: start;
+  }
+
+  .de{
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0;
+    padding-top: .45em;
+  }
+
+  .texto{ margin: 0; display: flex; flex-direction: column; gap: .9em; }
+  .texto p{ margin: 0; }
+  .texto p:first-child{ font-size: 1.08rem; }
+
+  .firma{
+    font-family: "Dancing Script", "Segoe Script", cursive;
+    font-size: 1.9rem;
+    line-height: 1.2;
+    color: var(--carmin);
+    margin: .1em 0 0;
+  }
+
+  .telar{ display: block; width: 180px; max-width: 100%; height: auto; margin-inline: auto; }
+  .telar path{ fill: none; stroke: var(--rule); stroke-width: 1; }
+  .telar circle{ fill: var(--carmin); }
+
+  .cierre{
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding-block: clamp(22px, 5vw, 34px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .cierre .grande{
+    font-family: "Newsreader", Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: clamp(1.3rem, 5.4vw, 1.8rem);
+    line-height: 1.35;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .fecha{
+    font-size: .72rem;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  @media (max-width: 620px){
+    .carta{ grid-template-columns: 1fr; gap: 6px; }
+    .de{ padding-top: 0; }
+  }
+</style>
+</head>
+<body>
+<main class="pagina">
+
+  <header class="encabezado">
+    <p class="ocasion">Amor y amistad · 19 de septiembre de 2026</p>
+    <h1>Gracias,<em>María Inés Montaño</em></h1>
+    <p class="entrada">Esta casa funciona porque tú estás. Hoy queremos decírtelo por escrito, para que quede.</p>
+  </header>
+
+  <div class="cartas">
+
+    <article class="carta">
+      <p class="de">De tu esposo</p>
+      <div class="texto">
+        <p>Gracias por los años, por la paciencia y por la calma que traes cuando todo lo demás se complica.</p>
+        <p>Elegirte fue lo mejor que hice, y lo volvería a hacer hoy sin pensarlo. Te quiero como el primer día, pero con más razones.</p>
+        <p class="firma">Tu esposo</p>
+      </div>
+    </article>
+
+    <svg class="telar" viewBox="0 0 120 12" aria-hidden="true">
+      <path d="M0 10 L10 2 L20 10 L30 2 L40 10 L50 2 L60 10 L70 2 L80 10 L90 2 L100 10 L110 2 L120 10"></path>
+      <path d="M0 2 L10 10 L20 2 L30 10 L40 2 L50 10 L60 2 L70 10 L80 2 L90 10 L100 2 L110 10 L120 2"></path>
+      <circle cx="60" cy="6" r="2.2"></circle>
+    </svg>
+
+    <article class="carta">
+      <p class="de">De tus hijos</p>
+      <div class="texto">
+        <p>Gracias por la comida caliente, por las noches sin dormir que nunca nos cobraste y por creer en nosotros antes que nadie.</p>
+        <p>Todo lo bueno que sabemos hacer lo aprendimos viéndote. Eres nuestro lugar seguro, mamá.</p>
+        <p class="firma">Tus hijos</p>
+      </div>
+    </article>
+
+  </div>
+
+  <footer class="cierre">
+    <p class="grande">Gracias por sostenernos, María Inés. Hoy te toca a ti que te cuiden.</p>
+    <p class="fecha">Con todo nuestro cariño</p>
+  </footer>
+
+</main>
+</body>
+</html>
